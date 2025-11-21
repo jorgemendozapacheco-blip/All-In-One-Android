@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:background="@drawable/drawer_background">
+
+
+<group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/inicio"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_pedidos2"
+            android:icon="@drawable/pedido_en_linea"
+            android:title="Mis Pedidos" />
+        <item
+            android:id="@+id/nav_promociones"
+            android:icon="@drawable/promocion"
+            android:title="promociones %" />
+
+        <item
+            android:id="@+id/nav_carrito"
+            android:icon="@drawable/carrito"
+            android:title="carrito" />
+        <item
+            android:visible="true"
+            android:title="" />
+        <item
+            android:visible="true"
+            android:title="" />
+        <item
+            android:visible="true"
+            android:title="" />
+        <item
+            android:visible="true"
+            android:title="" />
+        <item
+            android:visible="true"
+            android:title="" />
+        <item
+            android:visible="true"
+            android:title="" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Más">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_ajuste"
+                    android:icon="@drawable/baseline_settings_24"
+                    android:title="Ajustes" />
+                <item
+                    android:id="@+id/nav_exit"
+                    android:icon="@drawable/baseline_exit_to_app_24"
+                    android:title="Cerrar Sesión" />
+            </menu>
+        </item>
+
+    </group>
+</menu>

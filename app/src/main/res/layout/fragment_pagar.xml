@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp"
+    android:background="@color/black"
+    tools:context=".ui.carrito.realizar_pago.PagarFragment">
+
+
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona tu método de pago"
+        android:textSize="20sp"
+        android:textColor="@color/teal_200"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/border_radius_8"
+    android:paddingStart="10sp">
+
+<RadioGroup
+        android:id="@+id/paymentMethodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_radius_8">
+
+    <RadioButton
+        android:id="@+id/radioButtonCreditCard"
+        android:layout_width="30dp"
+        android:layout_height="65dp" />
+        <!-- Método de Pago 1 - Tarjeta de Crédito -->
+    <RadioButton
+        android:id="@+id/radioButtonPayPal"
+        android:layout_width="30dp"
+        android:layout_height="65dp" />
+
+    <RadioButton
+        android:id="@+id/radioButtonBitcoin"
+        android:layout_width="30dp"
+        android:layout_height="65dp" />
+</RadioGroup>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/border_radius_8"
+          android:orientation="vertical">
+
+      <LinearLayout
+            android:layout_width="316dp"
+            android:layout_height="65dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/visa" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Tarjeta de Crédito"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Método de Pago 2 - PayPal -->
+        <LinearLayout
+            android:layout_width="318dp"
+            android:layout_height="65dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/paypal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="PayPal"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Método de Pago 3 - Bitcoin -->
+
+
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="65dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/bitcoin_wallet" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Bitcoin"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+    <!-- Botón de Pago -->
+    <Button
+        android:id="@+id/pagarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pagar"
+        android:textSize="18sp"
+        android:background="@drawable/border_radius_8"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/buttonNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="18sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="@color/teal_700"/>
+</LinearLayout>

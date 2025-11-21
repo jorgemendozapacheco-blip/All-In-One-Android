@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Estás seguro de que deseas cerrar sesion de la aplicación?"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/buttonYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sí"
+            android:textSize="18sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/teal_700"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="No"
+            android:textColor="@color/teal_200"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

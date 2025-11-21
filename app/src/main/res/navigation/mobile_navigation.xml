@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.afinal.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_navigation_categorias_to_calzadoFragment"
+            app:destination="@id/calzadoFragment" />
+        <action
+            android:id="@+id/action_navigation_categorias_to_electrodomesticosFragment"
+            app:destination="@id/ElectrodomesticosFragment" />
+
+        <action
+            android:id="@+id/action_navigation_categorias_to_vestimentaFragment"
+            app:destination="@id/VestimentaFragment" />
+        <action
+            android:id="@+id/action_navigation_categorias_to_juguetesFragment"
+            app:destination="@id/JuguetesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_pedidos"
+        android:name="com.example.afinal.ui.gallery.GalleryFragment"
+        android:label="Mis Pedidos"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.afinal.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_carrito"
+        android:name="com.example.afinal.ui.carrito.CarritoFragment"
+        android:label="Carrito"
+        tools:layout="@layout/fragment_carrito" >
+        <action
+            android:id="@+id/action_nav_carrito_to_PagarFragment"
+            app:destination="@id/PagarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_promociones"
+        android:name="com.example.afinal.ui.promos.PromosFragment"
+        android:label="Promos"
+        tools:layout="@layout/fragment_promos" />
+
+    <fragment
+        android:id="@+id/calzadoFragment"
+        tools:layout="@layout/fragment_calzado"
+        android:name="com.example.afinal.ui.carrito.calzado.CalzadoFragment"
+        android:label="Shop Calzado" />
+
+    <fragment
+        android:id="@+id/ElectrodomesticosFragment"
+        tools:layout="@layout/fragment_electrodomestico"
+        android:name="com.example.afinal.ui.carrito.elctrodomesticos.ElectrodomesticoFragment"
+        android:label="electrodomesticos" />
+
+    <fragment
+        android:id="@+id/VestimentaFragment"
+        tools:layout="@layout/fragment_vestimenta"
+        android:name="com.example.afinal.ui.carrito.vestimenta.VestimentaFragment"
+        android:label="Vestimentas" />
+
+    <fragment
+        android:id="@+id/JuguetesFragment"
+        tools:layout="@layout/fragment_juguetes"
+        android:name="com.example.afinal.ui.carrito.juguetes.JuguetesFragment"
+        android:label="Juguetes" />
+    <fragment
+        android:id="@+id/PagarFragment"
+        tools:layout="@layout/fragment_pagar"
+        android:name="com.example.afinal.ui.carrito.realizar_pago.PagarFragment"
+        android:label="Realizar Pago" >
+        <action
+            android:id="@+id/action_PagarFragment_to_creditCardFragment"
+            app:destination="@id/creditCardFragment" />
+        <action
+            android:id="@+id/action_PagarFragment_to_payPalFragment"
+            app:destination="@id/payPalFragment" />
+        <action
+            android:id="@+id/action_PagarFragment_to_otroMetodoFragment"
+            app:destination="@id/otroMetodoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_exit"
+        tools:layout="@layout/fragment_exit_confirmation"
+        android:name="com.example.afinal.ui.confirmacion_exit.ExitConfirmationFragment"
+        android:label="Exit App" />
+    <fragment
+        android:id="@+id/nav_ajuste"
+        tools:layout="@layout/fragment_ajustes"
+        android:name="com.example.afinal.ui.ajustes.AjustesFragment"
+        android:label="Ajustes" >
+        <action
+            android:id="@+id/action_nav_ajuste_to_editPerfilFragment"
+            app:destination="@id/editPerfilFragment" />
+        <action
+            android:id="@+id/action_nav_ajuste_to_editPassFragment"
+            app:destination="@id/editPassFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/creditCardFragment"
+        android:name="com.example.afinal.ui.carrito.realizar_pago.credit_card.CreditCardFragment"
+        android:label="Pago Con Tarjeta"
+        tools:layout="@layout/fragment_credit_card" />
+    <fragment
+        android:id="@+id/payPalFragment"
+        android:name="com.example.afinal.ui.carrito.realizar_pago.pay_pal.PayPalFragment"
+        android:label="Pago con PayPal"
+        tools:layout="@layout/fragment_pay_pal" />
+    <fragment
+        android:id="@+id/otroMetodoFragment"
+        android:name="com.example.afinal.ui.carrito.realizar_pago.otro_metodo.OtroMetodoFragment"
+        android:label="Otro Metodo de Pago"
+        tools:layout="@layout/fragment_otro_metodo" />
+    <fragment
+        android:id="@+id/editPerfilFragment"
+        android:name="com.example.afinal.ui.ajustes.editar_perfil.EditPerfilFragment"
+        android:label="fragment_edit_perfil"
+        tools:layout="@layout/fragment_edit_perfil" />
+    <fragment
+        android:id="@+id/editPassFragment"
+        android:name="com.example.afinal.ui.ajustes.editar_password.EditPassFragment"
+        android:label="fragment_edit_pass"
+        tools:layout="@layout/fragment_edit_pass" />
+</navigation>

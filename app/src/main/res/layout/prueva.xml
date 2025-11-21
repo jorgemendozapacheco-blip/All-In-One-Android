@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ui.ajustes.editar_perfil.EditPerfilFragment">
+
+    <!-- Sección de Editar Contraseña -->
+    <LinearLayout
+        android:id="@+id/layoutEditarContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingHorizontal="20sp"
+        android:orientation="vertical">
+
+        <!-- Imagen de candado animado (puedes cambiarlo por la animación que prefieras) -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageContraseña"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            app:lottie_rawRes="@raw/candado_animado"
+            app:lottie_autoPlay="true" />
+
+        <!-- Sección de contraseña actual -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Icono de candado -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_lock_24"
+                app:tint="#FFFFFF" />
+
+            <!-- EditText para la contraseña actual -->
+            <EditText
+                android:id="@+id/editTextContraseñaActual"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Contraseña Actual"
+                android:inputType="textPassword"
+                android:textColor="@color/teal_200"
+                android:textColorHint="@color/teal_700" />
+        </LinearLayout>
+
+        <!-- Sección de nueva contraseña -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- Icono de candado -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_lock_24"
+                app:tint="#FFFFFF" />
+
+            <!-- EditText para la nueva contraseña -->
+            <EditText
+                android:id="@+id/editTextNuevaContraseña"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Nueva Contraseña"
+                android:inputType="textPassword"
+                android:textColor="@color/teal_200"
+                android:textColorHint="@color/teal_700" />
+        </LinearLayout>
+
+        <!-- Sección de verificación de contraseña -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- Icono de candado -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_lock_24"
+                app:tint="#FFFFFF" />
+
+            <!-- EditText para la verificación de la contraseña -->
+            <EditText
+                android:id="@+id/editTextVerificarContraseña"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Verificar Contraseña"
+                android:inputType="textPassword"
+                android:textColor="@color/teal_200"
+                android:textColorHint="@color/teal_700" />
+        </LinearLayout>
+
+        <!-- Botón para guardar cambios -->
+        <Button
+            android:id="@+id/btnGuardarContraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="Guardar Contraseña"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</RelativeLayout>

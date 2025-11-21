@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ui.ajustes.editar_perfil.EditPerfilFragment">
+
+    <!-- Sección de Editar Perfil -->
+    <LinearLayout
+        android:id="@+id/layoutEditarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingHorizontal="20sp"
+        android:orientation="vertical">
+
+        <!-- Imagen de perfil -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imagePerfil"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            app:lottie_rawRes="@raw/usuario_animado_admin"
+            app:lottie_autoPlay="true" />
+
+        <!-- Sección de nombre -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Icono de usuario -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/user"
+                app:tint="#FFFFFF" />
+
+            <!-- EditText para el nombre -->
+            <EditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:textColor="@color/teal_200"
+                android:textColorHint="@color/teal_700" />
+        </LinearLayout>
+
+        <!-- Sección de contraseña -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- Icono de candado -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_alternate_email_24"
+                app:tint="#FFFFFF" />
+
+            <!-- EditText para la email -->
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/teal_200"
+                android:textColorHint="@color/teal_700" />
+        </LinearLayout>
+
+        <!-- Botón para guardar cambios -->
+        <Button
+            android:id="@+id/btnGuardarCambios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="Guardar Cambios"
+            android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/buttonNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Guardar"
+            android:textSize="15sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/teal_700"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+</RelativeLayout>
