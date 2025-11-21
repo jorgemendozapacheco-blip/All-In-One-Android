@@ -1,9 +1,13 @@
 # 🛍️ ALL IN ONE - App de Compras Online
 
+<div align="center">
+
 ![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Android Studio](https://img.shields.io/badge/IDE-Android%20Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
 ![Java](https://img.shields.io/badge/Language-Java%2FKotlin-orange?style=for-the-badge)
 ![Estado](https://img.shields.io/badge/Estado-Finalizado-success?style=for-the-badge)
+
+</div>
 
 > **Desarrollado por:** [Jorge Eduardo Mendoza Pacheco](https://github.com/jorgemendozapacheco-blip)
 
@@ -30,16 +34,17 @@ El proyecto nace con el objetivo de solucionar la disminución de ventas causada
 
 ## 📸 Capturas de Pantalla
 
+<div align="center">
+
 | Login | Catálogo de Productos |
-| <img width="430" height="913" alt="image" src="https://github.com/user-attachments/assets/5a7952a3-ede0-4bdb-ba01-396461e7eca3" /> |
-| <img width="464" height="885" alt="image" src="https://github.com/user-attachments/assets/94b1532e-b588-4a28-be31-e162c7ccdc7b" />|
-
-
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/5a7952a3-ede0-4bdb-ba01-396461e7eca3" height="500" /> | <img src="https://github.com/user-attachments/assets/94b1532e-b588-4a28-be31-e162c7ccdc7b" height="500" /> |
 
 | Carrito de Compras | Confirmación de Pago |
-| <img width="422" height="901" alt="image" src="https://github.com/user-attachments/assets/51d224dc-f17c-4b03-bf9c-9011e9650d75" />
-| <img width="415" height="896" alt="image" src="https://github.com/user-attachments/assets/1e6fed7f-d73c-4efa-9516-de713dc4c9d0" />|
-| <img width="429" height="911" alt="image" src="https://github.com/user-attachments/assets/904675b2-6ace-49d5-8039-09bdbf964264" />|
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/51d224dc-f17c-4b03-bf9c-9011e9650d75" height="500" /> | <img src="https://github.com/user-attachments/assets/904675b2-6ace-49d5-8039-09bdbf964264" height="500" /> |
+
+</div>
 
 ---
 
@@ -48,7 +53,7 @@ El proyecto nace con el objetivo de solucionar la disminución de ventas causada
 * **Entorno de Desarrollo:** Android Studio
 * **Lenguaje:** Java / Kotlin
 * **Interfaz de Usuario:** XML (Layouts)
-* **Arquitectura:** MVC / MVVM (según aplique a tu código)
+* **Arquitectura:** MVC / MVVM
 
 ## 🔧 Instalación y Ejecución
 
